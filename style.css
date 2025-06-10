@@ -1,0 +1,198 @@
+    
+    
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffeef5; /* soft pink background */
+  color: #000;
+}
+
+header {
+  background: #000; /* black header */
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav {
+  background: #ffd6eb; /* light pink navbar */
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  position: relative;
+  color: #000; /* black nav links on pink background */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #ff69b4; /* bright pink underline */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  transform: scaleX(1);
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #eebfd0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #ffcce5;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ffb6d9;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background: #ff69b4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-content img {
+  flex-shrink: 0;
+}
+
+.about-content p {
+  flex: 1;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffd6eb, #ffeef5); /* soft pink gradient */
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 900px;
+  color: #000;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.hero a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#services ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#pricing {
+  background: #fff0f5;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+#pricing h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.pricing-category {
+  margin-bottom: 30px;
+}
+
+.pricing-category h3 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.pricing-category ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.pricing-category li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.book-now-btn {
+  display: inline-block;
+  background: #ff69b4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.book-now-btn:hover {
+  background: #ff1493;
+}
