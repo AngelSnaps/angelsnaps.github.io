@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngelSnaps Photography</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <header>
+    <h1>AngelSnaps Photography & Videography</h1>
+        <p>Parties, Events, Special Occasions, Portraits, Custom Editing, ect.</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <section class="hero">
+  <h2>Not Your Ordinary CameraMan</h2>
+  <p>Photography & Videography for events, portraits, and more. In Yuma, AZ and surrounding areas.(If I'm out of town I might be in your area so make sure to contact)</p>
+<p><a href="#contact" class="book-now-btn">Click Here To Book Now</a></p>
+</section>
+
+
+
+  <div class="container">
+    <section id="about">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <img src="https://codehs.com/uploads/cfd3c381b8aade9734efca1e7636b799" alt="Company Logo" style="width:150px;">
+    <p>
+      AngelSnaps Photography captures memories in every way possible. No matter what occasion we've got you covered with our photography & videography services to your needs. We do normal photos, lens signing, prop photos, custom frame photos, and custom lighted scenes.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Event Photography (birthdays, weddings, corporate, ect.)</li>
+    <li>Portraits (individual, couples, families, friends, ect.)</li>
+    <li>Graduation Photos (all grade levels)</li>
+    <li>Custom Editing and Digital Delivery</li>
+  </ul>
+</section>
+
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="pricing-category">
+    <h3>📷 Photography Sessions</h3>
+    <ul>
+      <li><strong>Basic Photo Session – Starting at $25</strong><br>30-60 minutes, 5 edited digital photos</li>
+      <li><strong>Creative Session – Starting at $35</strong><br>30–60 minutes, includes props and custom frame, 5 edited digital photos</li>
+      <li><strong>Plexiglass Art Session – $50</strong><br>Video and photo while you draw/sign, 1 video + 5 edited photos</li>
+    </ul>
+  </div>
+
+  <div class="pricing-category">
+    <h3>🎉 Event Photography</h3>
+    <ul>
+      <li><strong>Event Quick Shots – Starting at $75/hr</strong><br>Instant delivery (no editing), good for large parties, and Ulimitated photos</li>
+      <li><strong>Personal Event Coverage – Starting at $100</strong><br> 1-2 hours, 15 edited photos, and good for smaller events</li>
+
+    </ul>
+  </div>
+  
+      <p><Strong>All EVENTS come with ONE add on FREE (But only -$10 DISCOUNT on pexiglass art) and pricing will very based on size of event.</Strong></p>
+      
+  <div class="pricing-category">
+    <h3>✨ Add-Ons</h3>
+    <ul>
+      <li>Lightbox Dark Room Setup – <strong>+$10</strong></li>
+      <li>Props and/or Custom Frame – <strong>+$10</strong></li>
+      <li>Pexiglass Art – <strong>Starting at +$10</strong></li>
+      <li>Edited Photos – <strong>$5 each</strong> or <strong>$20 for 5</strong></li>
+      <li>Travel Fee (ONLY FOR FAR DISTANCE PLACES) – <strong>$15–50</strong></li>
+    </ul>
+  </div>
+
+  <p style="margin-top: 20px;"><strong>Need something custom? Just ask in the form — I'm flexible!</strong></p>
+</section>
+
+
+    <section id="gallery">
+      <h2>Event Gallery</h2>
+      <div class="gallery">
+        <img src="https://codehs.com/uploads/4cbb36b5b254494e29795dbb6818febe" alt="Ex 1">
+        <img src="event2.jpg" alt="Ex 2">
+        <img src="event3.jpg" alt="Ext 3">
+      </div>
+    </section>
+    
+
+    
+      <section id="contact">
+  <h2>Contact</h2>
+  <p>Want to book a session or have any questions? <strong>Fill out Booking Form, DM, or Email me (if you email me then put the subject of email as "ANGELSNAPS BOOKING") from any form of communication below.</strong></p>
+  
+ <p><strong>Best way to reach me is through this form</strong></p>
+  
+  <p><strong>Instagram DM</strong>: <a href="https://instagram.com/angelskates15" target="angelskates15">@angelskates15</a></p>
+  <p><strong>Email:</strong> <a href="mailto:angelthechamp15@gmail.com">angelthechamp15@gmail.com</a></p>
+</section>
+
+<h3>Booking Request Form</h3>
+<form id="booking-form" class="contact-form" action="https://formspree.io/f/xyzjenov" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <textarea name="contact_info" placeholder="Your Email, Phone Number, or best way of communicating" required></textarea>
+  <textarea name="phone" placeholder="Your Phone Number (optional but better for communication)"></textarea>
+  
+  <select name="event_type" required>
+    <option value="" disabled selected>Select Type of Event</option>
+    <option value="Graduation">Graduation</option>
+    <option value="Portraits">Portraits</option>
+    <option value="Birthday">Birthday</option>
+    <option value="Wedding">Wedding</option>
+    <option value="Corporate">Corporate</option>
+    <option value="Other">Other</option>
+  </select>
+  
+  <input type="date" name="event_date" required>
+  
+  <textarea name="message" placeholder="Tell me about your booking, any special requests or put better form of communicaton here." required></textarea>
+  
+  <button type="submit">Send Booking Request</button>
+</form>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("booking-form");
+    form.addEventListener("submit", () => {
+      setTimeout(() => {
+        alert("Thank you! Your booking request has been sent. I’ll get back to you soon!");
+      }, 200);
+    });
+  });
+</script>
+
+
+
+  </div>
+  <footer>
+    Established 2025
+  </footer>
+</body>
+</html>
